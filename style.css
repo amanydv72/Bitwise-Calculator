@@ -1,0 +1,31 @@
+/* The side navigation menu */
+*{
+  margin: 0;
+  padding: 0;
+}
+.head{
+   position: sticky;
+   z-index: 1;
+   top: 0;
+}
+
+.sidebar{
+    height: 91vh;
+    overflow: scroll;
+    text-align: center;
+    border: 2px solid white;
+    position: fixed;
+  }
+ 
+/* .sidebar-2{
+    height: 90vh;
+    overflow: scroll;
+    text-align: center;
+    border: 2px solid white;
+  } */
+.sidebar ul li{
+    list-style: none;
+}
+strong{
+    text-align: center;
+}

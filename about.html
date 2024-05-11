@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="about.css">
+
+</head>
+
+<body id="top">
+
+  <header class="head">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Calculator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Operations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link disabled">Disabled</a> -->
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                </form>
+                <!-- <div class="mx-2">
+                    <button class="btn btn-danger ms-5 px-3" data-bs-toggle="modal"
+                        data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Signup</button>
+                </div> -->
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="LoginModalLabel">LogIn to Calculator</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--SignUp Modal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="SignupModalLabel">SignUp to Calculator</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+    <main class="py-1">
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class="active" aria-current="true"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg> -->
+                    <img src="https://source.unsplash.com/1540x512/?calculator,computer" class="bd-placeholder-img"
+                        width="100%" height="100%" alt="">
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1 class="text-bg-warning d-inline p-2 px-5 border border-dark rounded">Arithmetic</h1>
+                            <p></p>
+                            <p><a class="btn btn-lg btn-outline-primary" href="index.html">Home</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg> -->
+                    <img src="https://source.unsplash.com/1550x512/?calculator,computer" class="bd-placeholder-img"
+                        width="100%" height="100%" alt="">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1 class="text-bg-warning d-inline p-2 px-5 border border-dark rounded">Bitwise</h1>
+                            <!-- <p>Some representative placeholder content for the second slide of the carousel.</p> -->
+                            <p><a class="btn btn-lg btn-outline-primary mt-3" href="index.html">Home</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg> -->
+                    <img src="https://source.unsplash.com/1560x512/?calculator,computer" class="bd-placeholder-img"
+                        width="100%" height="100%" alt="">
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1 class="text-bg-warning d-inline p-2 px-5 border border-dark rounded">Logical</h1>
+                            <!-- <p>Some representative placeholder content for the third slide of this carousel.</p> -->
+                            <p><a class="btn btn-lg btn-outline-primary mt-3" href="index.html">Home</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <!-- Marketing messaging and featurettes
+    ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="aman yadav.jpeg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg> -->
+                    <img src="aman2.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                    <h2 class="fw-normal">Aman Yadav</h2>
+<pre>Hi,
+I am Aman Yadav, I am an enthusiast in the field
+ of software engineering and a deep
+ interest in software development.</pre>
+<pre><a class="btn btn-outline-primary" href="https://www.linkedin.com/in/aman-yadav-34083b204/" target="_blank">View details »</a></pre>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg> -->
+                    <img src="Screenshot (506).png" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                    <h2 class="fw-normal">Rishabh Kumar Singh</h2>
+<pre>Hi,
+I am Rishabh Kumar Singh, I am an enthusiast in the
+field of software engineering and a deep
+interest in software development.</pre>
+                    <pre><a class="btn btn-outline-primary" href="https://www.linkedin.com/in/rishabh-kumar-singh-38529221b/" target="_blank">View details »</a></pre>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
+                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em">140x140</text>
+                    </svg> -->
+                    <img src="pulkit.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="">
+
+                    <h2 class="fw-normal">Pulkit Gaur</h2>
+<pre>Hi,
+I am Pulkit Gaur, I am an enthusiast in the field
+of software engineering and a deep
+interest in software development.</pre>                   
+                    <pre><a class="btn btn-outline-primary" href="https://www.linkedin.com/in/pulkit-gaur-a0b37522b/" target="_blank">View details »</a></pre>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Aman Yadav
+                         <span
+                            class="text-muted">(Blow your Mind)</span>
+                        </h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt sed fuga consequuntur blanditiis necessitatibus odit quidem laboriosam nulla enim!</p>
+                </div>
+                <div class="col-md-5">
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg> -->
+                    <img src="Aman full.jpeg" class="bd-placeholder-img" width="500" height="500" alt="">
+
+
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Rishabh Kumar Singh<span class="text-muted"> (See
+                            for yourself)</span></h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel sit nesciunt suscipit animi ducimus ad non quod voluptatibus cupiditate.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg> -->
+                    <img src="rishabh full.jpeg" class="bd-placeholder-img" width="500" height="500" alt="">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Pulkit Gaur <span
+                            class="text-muted"> (And lastly, this one, Checkmate)</span></h2>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa asperiores sapiente harum. Voluptatibus doloremque consequatur, dolorem dignissimos architecto sint.</p>
+                </div>
+                <div class="col-md-5">
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg> -->
+                    <img src="pulkit full.jpeg" class="bd-placeholder-img" width="500" height="500" alt="">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider bg-dark">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#top">Back to top</a></p>
+            <p>© 2017–2022 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
